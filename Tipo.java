@@ -8,21 +8,27 @@ public class Tipo {
             this.modelo = modelo;
             this.ano = ano;
         }
-    
+
+    public Tipo(){
+        this.marca = "Desconhecido";
+        this.modelo = "Desconhecido";
+        this.ano = 0;
+        }
+
     public String getMarca(){
             return this.marca;
         }
         public void setMarca(String m){ //void pq ele não vai retornar nada
             this.marca = m;
         }
-    
+
     public String getModelo(){
             return this.modelo;
         }
         public void setModelo(String md){
             this.modelo = md;
         }
-    
+
         public int getAno(){
             return this.ano;
         }
@@ -34,7 +40,7 @@ public class Tipo {
                 this.ano = a;
             }
         }
-    
+
         public void exibir(){
             System.out.println("Marca: " + this.getMarca());
             System.out.println("Modelo: " + this.getModelo());
