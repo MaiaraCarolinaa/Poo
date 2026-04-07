@@ -8,9 +8,11 @@ public class Carro {
         Tipo carro4 = new Tipo();
         Tipo carro5 = new Tipo("Fiat", "Uno", 2000);
 
+        System.out.println("--------------------------------------------");
         Tipo.imprimirTotal();
+
+        System.out.println("Ano primeiro carro: " + Tipo.ANO_PRIMEIRO_CARRO);
         }
     }
-    /*Não é possível acessar pelo imprimirTotal, visto que é estático, não tem como referenciar.
-      O método estático não consegue acessar um atributo de instancia pq ele pertence a uma classe, ele não tem
-      referência ao objeto criado. */
+    /*Se tentar alterar o ANO_PRIMEIRO_CARRO não conseguirá, pois é uma variável final.
+      Final em uma variável faz com que ela não possa ser alterada, pois ela é imutável. */
