@@ -1,18 +1,22 @@
 
 public class Carro {
     public static void main(String[] args){
+       //public static void main(String[] args) {
+           //if (true) {
+               //int x = 10;
+           //}
+           //System.out.println(x);
+       //}
+       //o código não é compilado, pois o compilador diz que não há um simbolo encontrado.
 
-        Tipo carro1 = new Tipo("Toyota", "Corolla", 2024);
-        Tipo carro2 = new Tipo();
-        Tipo carro3 = new Tipo("Chevrolet", "Silverado", 2025);
-        Tipo carro4 = new Tipo();
-        Tipo carro5 = new Tipo("Fiat", "Uno", 2000);
+     int x = 0;
+       if (true){
+           x = 10;
+       }
+       System.out.println(x);
+   }
+}
 
-        System.out.println("--------------------------------------------");
-        Tipo.imprimirTotal();
-
-        System.out.println("Ano primeiro carro: " + Tipo.ANO_PRIMEIRO_CARRO);
-        }
-    }
-    /*Se tentar alterar o ANO_PRIMEIRO_CARRO não conseguirá, pois é uma variável final.
-      Final em uma variável faz com que ela não possa ser alterada, pois ela é imutável. */
+    /*O escopo é a região do código onde uma variável é "visível" e pode ser acessada.
+      No caso do Java, o escopo é delimitado por chaves {}.
+      A variável x não existia fora do if, pois como ela está dentro das chaves, ela vira uma variável local daquele bloco. */
