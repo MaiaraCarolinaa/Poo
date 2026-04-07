@@ -19,6 +19,11 @@ public class Tipo {
             totalCarros++;
         }
 
+     public static void imprimirTotal(){
+        System.out.println("Imprimir total de carros: " + totalCarros);
+        //System.out.println(this.modelo);
+    }    
+
     public String getMarca(){
             return this.marca;
         }
